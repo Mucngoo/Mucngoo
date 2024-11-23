@@ -8,6 +8,10 @@ public class CommercialProperty extends Property{
     public CommercialProperty() {
     }
 
+    public CommercialProperty(String propertyId) {
+        super(propertyId);
+    }
+
     public CommercialProperty(String id, String address, double price, Status status, Owner owner) {
         super(id, address, price, status, owner);
     }
@@ -41,5 +45,10 @@ public class CommercialProperty extends Property{
 
     public double getSquareFootage() {
         return this.squareFootage;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | " + businessType + " | " + parkingSpaces + " | " + squareFootage;
     }
 }

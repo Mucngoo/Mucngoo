@@ -24,6 +24,10 @@ public class RentalAgreement {
     public RentalAgreement() {
     }
 
+    public RentalAgreement(String id) {
+        this.id = id;
+    }
+
     public RentalAgreement(String id, Property propertyLeased, RentalPeriod period, Date contractDate, double rentalFee, RentalStatus status) {
         this.id = id;
         this.propertyLeased = propertyLeased;

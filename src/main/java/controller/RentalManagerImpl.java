@@ -8,19 +8,9 @@ import java.util.stream.Collectors;
 
 public class RentalManagerImpl implements RentalManager{
     private List<RentalAgreement> rentalAgreements;
-    private List<Tenant> tenants;
-    private List<Host> hosts;
-    private List<Owner> owners;
-    private List<ResidentialProperty> residentialProperties;
-    private List<CommercialProperty> commercialProperties;
 
     public RentalManagerImpl() {
         rentalAgreements = new ArrayList<RentalAgreement>();
-        tenants = new ArrayList<Tenant>();
-        hosts = new ArrayList<Host>();
-        owners = new ArrayList<Owner>();
-        residentialProperties = new ArrayList<ResidentialProperty>();
-        commercialProperties = new ArrayList<CommercialProperty>();
     }
 
     @Override
@@ -74,30 +64,5 @@ public class RentalManagerImpl implements RentalManager{
         return rentalAgreements.stream()
                 .filter(agreement -> agreement.getStatus() == status)
                 .collect(Collectors.toList());
-    }
-
-    @Override
-    public List<Tenant> getAllTenants() {
-        return new ArrayList<>(tenants);
-    }
-
-    @Override
-    public List<Host> getAllHosts() {
-        return List.of();
-    }
-
-    @Override
-    public List<Owner> getAllOwners() {
-        return List.of();
-    }
-
-    @Override
-    public List<ResidentialProperty> getAllResidentialProperties() {
-        return List.of();
-    }
-
-    @Override
-    public List<CommercialProperty> getAllCommercialProperties() {
-        return List.of();
     }
 }

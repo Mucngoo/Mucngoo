@@ -18,6 +18,10 @@ public abstract class Property {
     public Property() {
     }
 
+    public Property(String propertyId) {
+        this.id = propertyId;
+    }
+
     public Property(String id, String address, double price, Status status, Owner owner) {
         this.id = id;
         this.address = address;

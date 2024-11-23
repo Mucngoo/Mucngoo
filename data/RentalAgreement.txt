@@ -1,0 +1,3 @@
+id,propertyLeased,period,contractDate,rentalFee,status,mainTenant,subTenants
+RA001|RP001|MONTHLY|2024-01-01|1000.00|ACTIVE|T001|T002,T003
+RA002|CP002|WEEKLY|2024-02-10|400.00|NEW|T002|T004

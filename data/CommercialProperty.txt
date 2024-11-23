@@ -1,0 +1,3 @@
+id,address,price,status,owner,hostsManaging,businessType,parkingSpace,squareFootage
+CP001|123 Main St|1000.00|AVAILABLE,O001|H001,H002|Retail|20|10000.00
+CP002|789 Market Rd|2500.00|RENTED|O001|H003|Office|50|12000.00

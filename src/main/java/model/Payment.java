@@ -1,5 +1,6 @@
 package model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Payment {
@@ -9,6 +10,10 @@ public class Payment {
     private String paymentMethod;
 
     public Payment() {
+    }
+
+    public Payment(String paymentId) {
+        this.id = paymentId;
     }
 
     public Payment(String id, double amount, Date date, String paymentMethod) {
@@ -48,5 +53,13 @@ public class Payment {
 
     public String getPaymentMethod() {
         return this.paymentMethod;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String formattedDate = (getDate() != null) ? dateFormat.format(getDate()) : "N/A"; // Null-safe check
+
+        return this.id + " | " + amount + " | " + formattedDate + " | " + paymentMethod;
     }
 }

@@ -1,0 +1,3 @@
+id,fullName,dob,contactInfo,propertiesManaged,ownersCooperating,rentalAgreements
+H001|Jane Doe|1985-05-15|janedoe@example.com|CP001,RP002|O001,O002|RA001
+H002|Jane Smith|1990-10-20|janesmith@example.com|CP002|O002|RA002

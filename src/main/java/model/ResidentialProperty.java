@@ -8,6 +8,10 @@ public class ResidentialProperty extends Property{
     public ResidentialProperty() {
     }
 
+    public ResidentialProperty(String propertyId) {
+        super(propertyId);
+    }
+
     public ResidentialProperty(String id, String address, double price, Status status, Owner owner) {
         super(id, address, price, status, owner);
     }
@@ -41,5 +45,10 @@ public class ResidentialProperty extends Property{
 
     public boolean getPetFriendly() {
         return this.petFriendly;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " | " + bedrooms + " | " + hasGarden + " | " + petFriendly;
     }
 }

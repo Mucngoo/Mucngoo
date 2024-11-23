@@ -1,0 +1,3 @@
+id,fullName,dob,contactInfo,propertiesOwned,hostsCooperating,rentalAgreements
+O001|Robert Johnson|1975-03-05|robertj@example.com|RP001,RP002|H001,H003|RA001
+O002|Susan Clark|1980-11-22|susanc@example.com|CP002|H002|RA002,RA002
